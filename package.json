@@ -1,0 +1,29 @@
+{
+  "name": "landingpageshowcase",
+  "version": "1.0.0",
+  "description": "Assortment of landing pages created using NextJs by me",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "next",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XPD-Kasun/LandingPagePortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GNU AFFERO GENERAL PUBLIC LICENSE",
+  "bugs": {
+    "url": "https://github.com/XPD-Kasun/LandingPagePortfolio/issues"
+  },
+  "homepage": "https://github.com/XPD-Kasun/LandingPagePortfolio#readme",
+  "devDependencies": {
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "next": "^13.1.6"
+  }
+}
