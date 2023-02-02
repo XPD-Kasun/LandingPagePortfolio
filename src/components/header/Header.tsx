@@ -1,9 +1,19 @@
-function Header() {
+'use client';
+
+import styled from 'styled-components';
+
+function Header({icon = ''}) {
     return (
-        <div>
-            <div>Header</div>
-        </div>
+        <HeaderContainer>
+            <HeaderInner>
+                Test
+            </HeaderInner>
+        </HeaderContainer>
     )
 }
+
+const HeaderContainer = styled.div``;
+
+const HeaderInner = styled.div``;
 
 export default Header;
