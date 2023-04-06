@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+       font-family: DMSans;
+       src: url('../../public/fonts/DM_Sans/DMSans-Regular.ttf');
+}
+
+@font-face {
+       font-family: Clarendon;
+       src: url('../../public/fonts/clarendon-regular/Clarendon-Regular.ttf');
+}
+
+@font-face {
+       font-family: Barlow;
+       src: url('../../public/fonts/Barlow/Barlow-Regular.ttf');
+}
+
+@font-face {
+       font-family: Barlow;
+       src: url('../../public/fonts/Barlow/Barlow-Bold.ttf');
+       font-weight: bold;
+}
+
+@font-face {
+       font-family: Inter;
+       src: url('../../public/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+body{ 
+       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@layer base {
+
+       .container-centered {
+              @apply lg:container mx-auto px-5;
+       }
+
+       .container-centered.snug {
+              @apply xl:max-w-[1280px];
+       }
+
+       .btn {
+              @apply rounded-md px-5 py-2 font-bold tracking-wide hover:translate-y-1 transition;
+       }
+
+       .textbox {
+              @apply caret-slate-200;
+       }
+
+       .popcard {
+              @apply w-full rounded-xl bg-white/90 py-6 px-10 shadow-md border-white/20;
+       }
+
+       section.pt {
+              @apply pt-10 md:pt-20;
+       }
+
+       section.pb {
+              @apply pb-10 md:pb-20;
+       }
+
+       section.pt-sm {
+              @apply pt-10;
+       }
+
+       section.pb-sm {
+              @apply pb-10;
+       }
+       
+}

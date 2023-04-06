@@ -4,7 +4,7 @@ This project was created to showcase websites which I created using NextJS, Tail
 
 This collection has,
 
-- GroceryShop landing page
+- GroceryShop landing page [https://www.behance.net/gallery/123646551/Organo-UI-Design]
 - Fruit Juice brand landing page
 - SmartAI landing page
 - PhotoHopper App
