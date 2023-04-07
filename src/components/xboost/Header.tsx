@@ -13,7 +13,10 @@ function Header({ }: Props) {
                                    <ul className="flex items-center gap-10 ml-12">
                                           {
                                                  menus.map((item, i) => (
-                                                        <li className="font-bold tracking-wide" key={i}>{item}</li>
+                                                        <li className="cursor-pointer font-bold tracking-wide group relative" key={i}>
+                                                               <div>{item}</div>
+                                                               <span className="absolute bottom-0 -skew-x-12 left-0 w-0 h-2 bg-[#51df69] transition-[width] -z-10 group-hover:w-full"></span>
+                                                        </li>
                                                  ))
                                           }
                                    </ul>

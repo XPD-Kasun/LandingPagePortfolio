@@ -14,6 +14,7 @@ This collection has,
 - Car Booking landing page
 - Game landing page
 - EShop ecommerce landing page
+- XBoost Music landing page [https://www.figma.com/community/file/926231004224560952]
 
 
 
