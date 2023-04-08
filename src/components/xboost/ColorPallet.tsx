@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useRecoilState } from 'recoil';
-import { mainSpeaker3dColor } from '../../recoil/xboost';
+import { mainSpeaker3dColorAtom } from '../../recoil/xboost';
 
 type Props = {
 	className: string,
@@ -12,7 +12,7 @@ export default function ColorPallet({ className = "", colors }: Props) {
 	let colorCircleCls = 'rounded-full w-7 h-7 cursor-pointer';
 	let colorKeyAr = colors.map((color, i) => ({ id: i, 'color': color }));
 
-	const [color, setColor] = useRecoilState(mainSpeaker3dColor);
+	const [color, setColor] = useRecoilState(mainSpeaker3dColorAtom);
 	const [selectedColor, setSelectedColor] = useState(4);
 
 	const onColorClick = (colorObj) => {
@@ -22,7 +22,7 @@ export default function ColorPallet({ className = "", colors }: Props) {
 
 	return (
 		<div className={className}>
-			<ul className="flex gap-5 items-center">
+			<ul className="flex gap-5 items-center justify-center md:justify-start">
 				{
 					colorKeyAr.map((colorObj, i) => {
 

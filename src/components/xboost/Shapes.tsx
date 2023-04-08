@@ -8,12 +8,12 @@ export function SoftArrow({className}) {
 }
 
 
-export function SoftArrowSpiral({className}) {
+export function SoftArrowSpiral({className, style = {}}) {
 
        return (
               <div className={className}>
-                     <SoftArrow className=""/>
-                     <img className="absolute bottom-0 right-0 object-fill w-4/5" src="./xboost/img/spiral.png" />
+                     <SoftArrow className="h-full right-0 absolute"/>
+                     <img className="absolute z-10 bottom-0 right-0 object-fill w-4/5" src="./xboost/img/spiral.png" />
               </div>
        )
 }
