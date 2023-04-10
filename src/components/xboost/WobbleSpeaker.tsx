@@ -12,7 +12,7 @@ export default function WobbleSpeaker({ color }) {
        console.log(color)
 
        return (
-              <Canvas camera={{ position: [0, -10, 23] }}>
+              <Canvas camera={{ position: [0, 0, 30], fov: 60 }}>
                      <ambientLight intensity={1.5} />
                      <directionalLight position={[0, 0, 35]} color={color} />
                      {/* <mesh>

@@ -19,12 +19,13 @@ export default function HeroSection({ }: Props) {
 		<section className="pb">
 			<main className="container-centered">
 				<div className="md:flex justify-stretch flex-row-reverse">
-					<div className="md:w-3/5 h-[calc(100vh*0.6)] md:h-[calc(100vh-80px)]">
+					<div className="md:w-3/5 h-[calc(100vh*0.6)] md:h-[calc(100vh-80px)] relative">
 						{/* <ErrorBoundary>
 							<Suspense fallback={<div></div>}>
 							<WobbleSpeaker color={color}/>
 							</Suspense>
 						</ErrorBoundary> */}
+						<div className="absolute bottom-0 lg:bottom-10 left-[50%] -translate-x-[50%] w-3/4 h-10 obj-shadow"></div>
 					</div>
 					<div className="md:w-2/5 max-lg:text-center">
 						<h1 className="text-6xl lg:text-7xl font-inter font-black md:pt-20">Introducing <br /><span className="whitespace-nobreak text-green-600" style={{color}}>Cozy Orbit Natural</span><br /> Bass II</h1>

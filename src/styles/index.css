@@ -71,3 +71,16 @@ body{
        }
        
 }
+
+.showcase-point {
+       @apply cursor-pointer w-5 h-5 bg-white absolute flex items-center 
+              justify-center rounded-full border border-[1px] border-[#5D5D5D] select-none;
+}
+
+.showcase-point .ping {
+       @apply absolute w-full h-full border-black rounded-full border border-[1px];
+}
+
+.obj-shadow {
+       background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.1) 0%, rgba(112, 112, 112, 0) 100%);
+}

@@ -20,7 +20,7 @@ function Header({ }: Props) {
                      <header className="flex justify-between items-center py-5 container-centered">
                             <nav className="flex items-center">
                                    <Logo></Logo>
-                                   <ul className="hidden md:display flex items-center gap-10 ml-12">
+                                   <ul className="hidden md:flex items-center gap-10 ml-12">
                                           {
                                                  menus.map((item, i) => (
                                                         <li className="cursor-pointer font-bold tracking-wide group relative" key={i}>
@@ -31,8 +31,8 @@ function Header({ }: Props) {
                                           }
                                    </ul>
                             </nav>
-                            <nav className="flex items-center space-x-4 text-white">
-                                   <div className="hidden md:block">
+                            <nav className="">
+                                   <div className="hidden md:flex items-center space-x-4 text-white">
                                           <div><IoCart size={30} /></div>
                                           <div><IoSearch size={30} /></div>
                                           <div className="flex items-center space-x-2">
