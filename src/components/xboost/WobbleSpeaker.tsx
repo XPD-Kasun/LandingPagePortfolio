@@ -21,7 +21,7 @@ export default function WobbleSpeaker({ color }) {
                             <boxGeometry args={[10, 10, 10, 2, 2, 2]}/>
                      </mesh> */}
                      <OrbitControls enablePan={false} enableZoom={false} />
-                     <Speaker isAnimating={false} location={[0, -10, 5]} scale={120}/>
+                     <Speaker isAnimating={true} location={[0, -10, 5]} scale={120}/>
               </Canvas>
        )
 

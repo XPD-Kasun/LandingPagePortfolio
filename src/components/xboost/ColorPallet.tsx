@@ -22,7 +22,7 @@ export default function ColorPallet({ className = "", colors }: Props) {
 
 	return (
 		<div className={className}>
-			<ul className="flex gap-5 items-center justify-center md:justify-start">
+			<ul className="flex gap-5 items-center justify-center lg:justify-start">
 				{
 					colorKeyAr.map((colorObj, i) => {
 

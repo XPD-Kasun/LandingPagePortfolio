@@ -84,3 +84,19 @@ body{
 .obj-shadow {
        background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.1) 0%, rgba(112, 112, 112, 0) 100%);
 }
+
+.card {
+       @apply will-change-transform cursor-pointer transition-[transform,background] rounded-lg shadow overflow-hidden border border-slate-200 hover:bg-zinc-100 active:scale-95;
+}
+
+.before-skew::before {
+       content: '';
+       position: absolute;
+       left: var(--beforeskew-left);
+       top: 0px;
+       display: block;
+       height: 100%;
+       width: 0;
+       border-bottom: var(--beforeskew-height) solid #4ade80;
+       border-left: 12px solid #ffffff00;
+}

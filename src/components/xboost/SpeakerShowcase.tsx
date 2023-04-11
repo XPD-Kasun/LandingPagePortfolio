@@ -20,8 +20,8 @@ export default function SpeakerShowcase({ }: Props) {
 
 	return (
 		<div className="relative z-10">
-			<div className="mx-auto w-full md:w-2/5 relative" onClick={onOuterClick}>
-				<img className="" src="./xboost/img/xboost_showcase.png" alt="" />
+			<div className="mx-auto w-full lg:w-1/2 xl:w-1/3 relative" onClick={onOuterClick}>
+				<img className="mx-auto" src="./xboost/img/xboost_showcase.png" alt="" />
 				<TapPoint onClick={onTapPointClick} xy={[33, 17]} />
 				<TapPoint onClick={onTapPointClick} xy={[73, 32]} />
 				<TapPoint onClick={onTapPointClick} xy={[20, 72]} />
@@ -51,7 +51,7 @@ function TapPoint({ xy, onClick }: TapPointProps) {
 			left: xy[0] + '%'
 		}}>
 			+
-			<div className="ping animate-ping"></div>
+			<div className="ping"></div>
 		</div>
 	);
 }

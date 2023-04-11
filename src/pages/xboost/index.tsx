@@ -6,6 +6,8 @@ import HeroSection from '../../components/xboost/HeroSection';
 import GalleryView from "../../components/xboost/GalleryView";
 import LandingMain from "../../components/xboost/LandingMain";
 import RelatedProducts from "../../components/xboost/RelatedProducts";
+import NewsLetter from "../../components/xboost/NewsLetter";
+import Footer from "../../components/xboost/Footer";
 
 type Props = {};
 
@@ -19,6 +21,8 @@ export default function XBoost({ }: Props) {
 				<GalleryView />
 				<LandingMain></LandingMain>
 				<RelatedProducts></RelatedProducts>
+				<NewsLetter />
+				<Footer />
 			</div>
 		</RecoilRoot>
 	);
