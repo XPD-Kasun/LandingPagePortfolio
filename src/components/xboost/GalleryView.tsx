@@ -9,9 +9,9 @@ export default function GalleryView({ }: Props) {
 	const [selectedImage, setSelectedImage] = useState(imgs[0]);
 	return (
 		<section className="">
-			<div className="container-centered flex items-center">
+			<div className="container-centered flex items-center justify-between">
 				<div className="w-10 h-40 flex items-center"><IoChevronBack size={40}></IoChevronBack></div>
-				<div className="flex justify-center items-center overflow-hidden flex-1 gap-3">
+				<div className="flex items-center overflow-auto flex-1 gap-3">
 					{
 						imgs.map((img, i) => {
 
@@ -21,7 +21,7 @@ export default function GalleryView({ }: Props) {
 							}
 
 							return (
-								<div key={i} className="w-40 h-40 p-3">
+								<div key={i} className="w-40 h-40 p-3 flex shrink-0">
 									<div className={"rounded outline outline-1 w-full h-full overflow-hidden " + outline} onClick={e => setSelectedImage(img)}>
 										<img src={`./xboost/img/${img}.png`} />
 									</div>

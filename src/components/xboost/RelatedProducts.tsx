@@ -5,11 +5,11 @@ type Props = {};
 
 export default function RelatedProducts({ }: Props) {
 	return (
-		<section className="pb-10 pt bg-slate-100">
+		<section className="pb-10 pt mt-10 bg-slate-100">
 			<div className="container-centered">
 				<div className="flex justify-between items-center">
 					<h2 className="text-4xl font-bold">Related Products</h2>
-					<button className="btn rounded-full uppercase border border-2 border-black text-normal font-bold">Show All</button>
+					<button className="btn shrink-0 rounded-full uppercase border border-2 border-black text-normal font-bold radar-button">Show All</button>
 				</div>
 				<Swiper className="mt-10 justify-center" breakpoints={{
 					640: {
@@ -25,7 +25,7 @@ export default function RelatedProducts({ }: Props) {
 					{
 						relatedProducts.map((product, i) => {
 							return (
-								<SwiperSlide key={i}>
+								<SwiperSlide key={product.id}>
 									<div className="card mr-3 my-3 px-8 py-8 bg-white relative">
 										<div className="h-[334px]">
 											<div className="absolute top-0 right-0 px-5 px-3 bg-green-400 before-skew" style={{'--beforeskew-height':'23px', '--beforeskew-left':'-12px'} as React.CSSProperties}>{availability(product.availability)}</div>
@@ -95,6 +95,42 @@ const relatedProducts = [
 	},
 	{
 		id: 4,
+		img: 'xboost10211.png',
+		title: 'Bose Noise Cancelling Headphones 700',
+		availability: 3
+	},
+	{
+		id: 5,
+		img: 'xboost10210.png',
+		title: 'QuietComfort 35 wireless headphones II',
+		availability: 1,
+		price: {
+			currency: '$',
+			amount: 449.99
+		}
+	},
+	{
+		id: 6,
+		img: 'xboost10211.png',
+		title: 'SoundLink® aroundear wireless headphones',
+		availability: 1,
+		price: {
+			currency: '$',
+			amount: 269.99
+		}
+	},
+	{
+		id: 7,
+		img: 'xboost10212.png',
+		title: 'Bose on-ear wireless headphones',
+		availability: 1,
+		price: {
+			currency: '$',
+			amount: 209.99
+		}
+	},
+	{
+		id: 8,
 		img: 'xboost10211.png',
 		title: 'Bose Noise Cancelling Headphones 700',
 		availability: 3

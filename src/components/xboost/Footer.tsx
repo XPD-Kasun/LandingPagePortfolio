@@ -14,7 +14,7 @@ export default function Footer({ }: Props) {
 						{
 							footerItems.map((item, i) => {
 								return (
-									<li key={i} className="w-1/4 lg:w-auto my-2 text-normal font-bold text-white">{item}</li>
+									<li key={i} className="w-1/5 md:1/4 lg:w-auto my-2 text-sm md:text-normal font-bold text-white footer-link">{item}</li>
 								)
 							})
 						}

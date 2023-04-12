@@ -100,3 +100,41 @@ body{
        border-bottom: var(--beforeskew-height) solid #4ade80;
        border-left: 12px solid #ffffff00;
 }
+
+.radar-button {
+       position: relative;
+       overflow: hidden;
+}
+
+.radar-button:after {
+    top: 0px;
+    left: -50%;
+    transform: skewX(-19deg);
+    content: '';
+    width: 35%;
+    backdrop-filter: invert(1);
+    @apply absolute bg-green-500/0 h-full;
+}
+
+.radar-button:hover:after {
+       animation-name: swipe;
+       animation-duration: 0.5s;
+       animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.radar-button:active:after {
+       animation: none;
+}
+
+@keyframes swipe {
+       0% {
+              left: 0;
+       }
+       100% {
+              left: 110%;
+       }
+}
+
+.footer-link {
+       @apply hover:underline underline-offset-4 cursor-pointer select-none;
+}
