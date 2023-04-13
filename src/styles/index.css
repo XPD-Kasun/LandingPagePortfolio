@@ -138,3 +138,31 @@ body{
 .footer-link {
        @apply hover:underline underline-offset-4 cursor-pointer select-none;
 }
+
+.top-header {
+       @apply flex justify-between items-center py-5 container-centered bg-white md:bg-transparent border-b md:border-0 border-neutral-200;
+}
+
+.mobile-header {
+       @apply md:!hidden absolute w-full top-[100%] h-[calc(100vh-100%)] bg-white/20 z-10 flex flex-col;
+}
+
+.hover-text-effect{
+}
+.hover-text-effect div:after {
+       content: '';
+       position:absolute;
+       bottom: 0px;
+       height: 10px;
+       transform: skewX(50deg);
+       width: 0%;
+       @apply bg-green-500/50 transition-[width];
+}
+
+.hover-text-effect div:hover {
+       transition: inherit;
+       @apply scale-150;
+}
+.hover-text-effect div:hover:after {
+       width:100%;
+}

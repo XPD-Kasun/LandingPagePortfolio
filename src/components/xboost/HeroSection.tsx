@@ -16,10 +16,10 @@ export default function HeroSection({ }: Props) {
 	let [color, _] = useRecoilState(mainSpeaker3dColorAtom);
 
 	return (
-		<section className="pb">
+		<section className="pb pt-[100px]">
 			<main className="container-centered">
 				<div className="md:flex justify-stretch flex-row-reverse">
-					<div className="md:w-3/5 h-[calc(100vh*0.6)] md:h-[calc(100vh-80px)] relative">
+					<div className="h-[60vh] md:h-auto md:w-3/5 shrink-0 relative">
 						{/* <ErrorBoundary>
 							<Suspense fallback={<div></div>}>
 							<WobbleSpeaker color={color}/>

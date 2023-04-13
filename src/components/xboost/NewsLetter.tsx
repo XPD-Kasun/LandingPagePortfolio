@@ -16,7 +16,7 @@ export default function NewsLetter({ }: Props) {
 							<h2 className="text-5xl text-white font-bold">Being first has its perks</h2>
 							<p className="my-5 text-white">Sign up to get more information about Bose, exclusive first looks at promotions, new products and more.</p>
 							<div className="lg:flex items-center gap-x-5">
-								<input type="text" className="rounded-full mb-3 lg:mb-0 w-full lg:w-auto py-2 px-4" placeholder="amanda@mymail.com" />
+								<input type="text" className="rounded-full mb-3 flex-1 lg:mb-0 w-full lg:w-auto py-2 px-4" placeholder="amanda@mymail.com" />
 								<button className="w-full btn rounded-full bg-white flex-1 radar-button">SIGN UP</button>
 							</div>
 						</div>
@@ -25,4 +25,4 @@ export default function NewsLetter({ }: Props) {
 			</div>
 		</section>
 	)
-}
+}	
