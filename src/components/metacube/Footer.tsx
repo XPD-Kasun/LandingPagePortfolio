@@ -60,7 +60,7 @@ function FooterBlock({ className = '', title, menus, align }: FooterBlockType) {
 			<ul className="space-y-2">
 				{
 					menus.map((item, i) => (
-						<li className="text-sm font-inter text-slate-300" key={i}>{item}</li>
+						<li className="text-sm font-inter text-slate-300 hover:underline hover:underline-offset-2" key={i}><a href="#">{item}</a></li>
 					))
 				}
 			</ul>

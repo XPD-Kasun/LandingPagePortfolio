@@ -1,4 +1,5 @@
 import React from 'react';
+import TypeWriter from 'typewriter-effect';
 import { Auth2Logo, GraphLogo, StripeLogo, DotNetLogo } from './Logos';
 
 type Props = {};
@@ -12,8 +13,15 @@ export default function HeroSection({ }: Props) {
 						<img src="./metacube/illustration-1.svg" />
 					</div>
 					<div className="md:w-3/5 ">
-						<h1 className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-white to-yellow-200 text-transparent bg-clip-text">
-							Create Your<br />NextGen AI<br />Powered Apps
+						<h1 className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-white to-yellow-200 text-transparent bg-clip-text min-h-[150px] md:min-h-[216px]">
+							<TypeWriter onInit={(tw) => {
+								for(let i = 0; i< headerLines.length; i++ ) {
+									tw.typeString(headerLines[i]);
+									tw.pauseFor(3000);
+									tw.deleteAll();
+								}
+								tw.start();
+							}} options={{delay:50, cursorClassName: 'Typewriter__cursor text-white', loop: true}}/>						
 						</h1>
 						<p className="my-8 max-md:text-sm md:max-w-[75%]">
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit sed repudiandae possimus at commodi officiis dolor eligendi dolores, ex error ad. Aliquid odit nulla voluptatem maiores blanditiis ducimus, ipsa quis.
@@ -47,3 +55,9 @@ const logos = [
 	StripeLogo,
 	DotNetLogo
 ];
+
+const headerLines = [
+	'Create Your<br />NextGen AI<br />Powered Apps',
+	'Developer Friendly<br/> APIs Are Ready',
+	'Interconnect Your<br/>Workflow With<br/>MetaCube'
+]

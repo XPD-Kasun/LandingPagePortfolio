@@ -6,9 +6,9 @@ This collection has,
 
 - GroceryShop landing page [https://www.behance.net/gallery/123646551/Organo-UI-Design]
 - Fruit Juice brand landing page
-- SmartAI landing page
+- MetaCube AI landing page
 - PhotoHopper App
-- Credit Advisor landing page
+- Credit Advisor landing page 
 - Data Analyist landing page
 - Company brand landing page
 - Car Booking landing page

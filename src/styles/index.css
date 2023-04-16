@@ -140,7 +140,7 @@ body{
 }
 
 .top-header {
-       @apply flex justify-between items-center py-5 container-centered bg-white md:bg-transparent border-b md:border-0 border-neutral-200;
+       @apply flex justify-between items-center py-5 container-centered;
 }
 
 .mobile-header {
@@ -165,4 +165,24 @@ body{
 }
 .hover-text-effect div:hover:after {
        width:100%;
+}
+
+.header-transparent {
+       @apply bg-transparent;       
+}
+
+.header-transparent .actions {
+       @apply text-white;
+}
+
+.header-solid {
+       @apply bg-white border-b border-neutral-200;;
+}
+
+.header-solid .actions {
+       @apply text-black;
+}
+
+.header-solid > .top-header {
+       @apply transition-[padding] py-2;
 }

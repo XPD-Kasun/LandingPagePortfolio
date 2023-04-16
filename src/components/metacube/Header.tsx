@@ -8,9 +8,11 @@ export default function Header({ }: Props) {
 			<div className="container-centered">
 				<div className="flex justify-between items-center py-8">
 					<div className="flex items-center">
-						<div className="flex items-center mr-20">
-							<img className="w-12 h-12 backdrop-invert mr-2" src="./metacube/logo.png" />
-							<div className="font-inter font-bold text-xl">MetaCube</div>
+						<div className="">
+							<a href="#" className="flex items-center mr-20">
+								<img className="w-12 h-12 backdrop-invert mr-2" src="./metacube/logo.png" />
+								<div className="font-inter font-bold text-xl">MetaCube</div>
+							</a>
 						</div>
 						<div className="hidden md:block">
 							<ul className="flex gap-6 text-zinc-400">
@@ -33,7 +35,7 @@ export default function Header({ }: Props) {
 	);
 }
 
-const  menuItems = [
+const menuItems = [
 	'Documentation',
 	'Pricing',
 	'Resources',
