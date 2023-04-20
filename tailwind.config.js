@@ -20,7 +20,10 @@ module.exports = {
 				},
 				'meta': '#333',
 				'metasub': '#f5ff80',
-				'metaalt': '#31cb53'
+				'metaalt': '#31cb53',
+				'swiss': '#2C1338',
+				'swisssub': '#9b4bc1',
+				'swissalt': '#00E6D1' 
 			},
 			fontFamily: {
 				//sans: ['DMSans', ...defaultTheme.fontFamily.sans]				

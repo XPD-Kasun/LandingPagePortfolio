@@ -8,7 +8,7 @@ This collection has,
 - Fruit Juice brand landing page
 - MetaCube AI landing page
 - PhotoHopper App
-- Credit Advisor landing page 
+- Credit Card landing page - Prototype imaginary card SwissCard.
 - Data Analyist landing page
 - Company brand landing page
 - Car Booking landing page

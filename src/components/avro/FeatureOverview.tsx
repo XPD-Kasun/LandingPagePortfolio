@@ -6,7 +6,7 @@ type Props = {};
 function FeatureOverview({ }: Props) {
 	return (
 		<section className="">
-			<div className="bg-avro py-10">
+			<div className="bg-[#3a5ba2] py-10">
 				<div className="container-centered">
 					<div className="sm:flex rounded-lg bg-slate-100/90 overflow-hidden p-3 space-x-3">
 						<ul className="shadow-lg cursor-pointer w-1/3 rounded-lg overflow-hidden h-full bg-slate-100">

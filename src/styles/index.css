@@ -34,6 +34,10 @@ body{
 
 @layer base {
 
+       a:hover {
+              @apply underline underline-offset-2;
+       }
+
        .container-centered {
               @apply lg:container mx-auto px-5;
        }
@@ -185,4 +189,8 @@ body{
 
 .header-solid > .top-header {
        @apply transition-[padding] py-2;
+}
+
+.spacer > div, img, ul, h2, h3, p {
+       @apply mb-3;
 }
