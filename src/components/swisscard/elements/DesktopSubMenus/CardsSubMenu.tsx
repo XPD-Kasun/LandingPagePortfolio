@@ -4,12 +4,12 @@ import { LongArrow } from '../../../shared/commonGraphics';
 import { IoCardOutline as IoCard, IoDownloadOutline as IoDownload, IoPaperPlaneOutline as IoPaperPlane } from 'react-icons/io5';
 import { TbAlignBoxLeftTop, TbDownload } from 'react-icons/tb';
 
-type Props = { productMenu: MenuItem };
+type Props = { cardMenu: MenuItem };
 
-export default function ProductSubMenu({ productMenu }: Props) {
+export default function CardsSubMenu({ cardMenu }: Props) {
 	return (
 		<div className="flex">
-			<div className="p-5 bg-slate-100 w-[300px] spacer">
+			{/* <div className="p-5 bg-slate-100 w-[300px] spacer">
 				<div className="flex items-center">
 					<div className="overflow-hidden w-10 h-10 shrink-0">
 						<img className="object-cover object-left h-full ml-[3px]" src="./swisscard/logo.png" alt="Swisscard logo" />
@@ -37,12 +37,12 @@ export default function ProductSubMenu({ productMenu }: Props) {
 					</li>
 				</ul>
 
-			</div>
-			<div className="p-5 bg-white w-[280px] border-r flex flex-col justify-between">
+			</div> */}
+			<div className="p-5 bg-white w-[280px] border-l flex flex-col justify-between">
 				<div className="pt-3 px-5 mb-3 font-bold text-zinc-500 tracking-widest uppercase text-sm">Additional Resources</div>
 				<ul className="flex-1">
 					{
-						productMenu.subMenus.map((subMenu) => {
+						cardMenu.subMenus.map((subMenu) => {
 
 							if (subMenu.category !== 'features') {
 								return null;
@@ -62,30 +62,6 @@ export default function ProductSubMenu({ productMenu }: Props) {
 					}
 				</ul>
 				<a href="#" className="link px-5 font-bold text-neutral-500 text-center">View Platform Overview</a>
-			</div>
-			<div className="p-5 bg-white w-[300px]">
-				<div className="pt-3 px-5 mb-3 font-bold text-zinc-500 tracking-widest uppercase text-sm">What's New</div>
-				<ul>
-					{
-						productMenu.subMenus.map((subMenu) => {
-
-							if (subMenu.category !== 'whatsnew') {
-								return null;
-							}
-
-							return (
-								<li key={subMenu.id} className="mb-3 group">
-									<a href="#" target="_blank" className="px-5	 py-2 transition-[background] hover:bg-neutral-200 cursor-pointer rounded block">
-										<h2 className="font-bold font-barlow group-hover:text-swisssub">
-											{subMenu.name}
-										</h2>
-										<p>{subMenu.subtitle}</p>
-									</a>
-								</li>
-							)
-						})
-					}
-				</ul>
 			</div>
 		</div>
 	);

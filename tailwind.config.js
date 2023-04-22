@@ -23,7 +23,8 @@ module.exports = {
 				'metaalt': '#31cb53',
 				'swiss': '#2C1338',
 				'swisssub': '#9b4bc1',
-				'swissalt': '#00E6D1' 
+				'swissalt': '#00E6D1',
+				'swisstext': '#fff3f2'
 			},
 			fontFamily: {
 				//sans: ['DMSans', ...defaultTheme.fontFamily.sans]				
@@ -35,5 +36,7 @@ module.exports = {
 			}
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('./tailwind-perspective-plugin')
+	],
 }

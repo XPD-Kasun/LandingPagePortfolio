@@ -34,7 +34,7 @@ body{
 
 @layer base {
 
-       a:hover {
+       a.link:hover {
               @apply underline underline-offset-2;
        }
 
@@ -191,6 +191,6 @@ body{
        @apply transition-[padding] py-2;
 }
 
-.spacer > div, img, ul, h2, h3, p {
+.spacer > div, .spacer > img, .spacer > ul, .spacer > h2, .spacer > h3, .spacer > p {
        @apply mb-3;
 }

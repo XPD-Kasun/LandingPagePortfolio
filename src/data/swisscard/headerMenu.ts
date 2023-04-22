@@ -13,19 +13,50 @@ const headerMenu : HeaderMenu = {
                                    id: 11,
                                    name: 'Personal',
                                    img: '',
+                                   category: 'features',
                                    subtitle: 'The only card you need to have'
                             },
                             {
                                    id: 12,
                                    name: 'Vendors',
                                    img: '',
+                                   category: 'features',
                                    subtitle: 'Open your business to the world'
                             },
                             {
                                    id: 13,
                                    name: 'Developers',
                                    img: '',
+                                   category: 'features',
                                    subtitle: 'Learn SwissCard platform basics'
+                            },
+                            {
+                                   id: 14,
+                                   name: 'SwissCard Connect Released',
+                                   img: '',
+                                   category: 'whatsnew',
+                                   subtitle: 'Now we support all major banks'
+                            },
+                            {
+                                   id: 15,
+                                   name: 'Documentation',
+                                   img: '',
+                                   category: 'whatsnew',
+                                   subtitle: 'Read the newest platform documentation'
+                            },
+                            {
+                                   id: 16,
+                                   name: 'We are hiring',
+                                   img: '',
+                                   category: 'whatsnew',
+                                   subtitle: 'Join With SwissCard Platform People'
+                            },
+                            {
+                                   id: 17,
+                                   name: 'SwissCard Social',
+                                   img: '',
+                                   category: 'whatsnew',
+                                   subtitle: 'Update to the latest news from SwissCard'
                             }
                      ]
               },

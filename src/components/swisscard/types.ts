@@ -12,5 +12,6 @@ export interface SubMenu {
        id: number | string,
        name: string,
        img?: string,
+       category?: string,
        subtitle: string
 }
