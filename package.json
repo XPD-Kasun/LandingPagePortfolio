@@ -43,6 +43,7 @@
 		"@types/react": "^18.0.29",
 		"@types/react-dom": "^18.0.11",
 		"@types/three": "^0.150.1",
+		"@xpd/tailwind-3dtransforms": "^1.0.3",
 		"autoprefixer": "^10.4.14",
 		"postcss": "^8.4.21",
 		"typescript": "^5.0.2"

@@ -10,7 +10,7 @@ export default function HeroSection({ }: Props) {
 			<div className="container-centered snug text-swisstext">
 				<div className="md:flex flex-row-reverse items-center">
 					<div className="md:w-1/2 relative">
-						<Card className="perspective-[1250] drop-shadow relative z-20" style={{transform: 'rotateY(20deg)'}}/>
+						<Card className="perspective-1200 drop-shadow relative z-20 rotate-y-30"/>
 						<Card className="perspective-1000 stub-card" />
 					</div>
 					<div className="md:w-1/2">

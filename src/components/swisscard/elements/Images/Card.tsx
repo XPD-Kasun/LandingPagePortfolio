@@ -29,7 +29,6 @@ export function Card({ className = "", style }: CardProps) {
 						<div className="">JOHN DOE</div>
 					</div>
 					<img className="h-10" src="./swisscard/twocircles.png" />
-
 				</div>
 			</div>
 		</div>

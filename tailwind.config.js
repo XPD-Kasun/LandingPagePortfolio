@@ -37,6 +37,6 @@ module.exports = {
 		},
 	},
 	plugins: [
-		require('./tailwind-perspective-plugin')
+		require('@xpd/tailwind-3dtransforms')
 	],
 }
